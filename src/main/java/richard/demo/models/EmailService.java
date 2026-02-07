@@ -2,6 +2,7 @@ package richard.demo.models;
 
 import jakarta.mail.*;
 import jakarta.mail.internet.*;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.Properties;
@@ -9,10 +10,17 @@ import java.util.Properties;
 @Service
 public class EmailService {
 
+    @Value("${emailFrom}")
+    private String from;
+
+    @Value("${emailPassword}")
+    private String password;
+
+    @Value("${emailTo}")
+    private String to;
+
     public void MandarEmail(String texto, String nome, String usuarioEmail){
-        final String from = "richdd.dev.app@gmail.com";
-        final String password = "ktys svze snie kckc";
-        String to = "richdd.dev@gmail.com";
+
 
         Properties props = new Properties();
         props.put("mail.smtp.host", "smtp.gmail.com");
