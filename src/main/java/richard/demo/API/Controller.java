@@ -3,7 +3,7 @@ package richard.demo.API;
 import org.springframework.web.bind.annotation.*;
 import richard.demo.models.APIcall;
 
-@CrossOrigin(origins = "http://localhost:5176")
+@CrossOrigin(origins = "https://autopreco.netlify.app/")
 @RestController
 @RequestMapping("/api")
 public class Controller {

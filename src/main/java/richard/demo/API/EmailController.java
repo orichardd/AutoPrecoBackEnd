@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import richard.demo.models.EmailRequest;
 import richard.demo.models.EmailService;
 
-@CrossOrigin(origins = "http://localhost:5176")
+@CrossOrigin(origins = "https://autopreco.netlify.app/")
 @RestController
 @RequestMapping("/email")
 public class EmailController {
