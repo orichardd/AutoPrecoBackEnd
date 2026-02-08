@@ -10,13 +10,13 @@ import java.util.Properties;
 @Service
 public class EmailService {
 
-    @Value("${emailFrom}")
+    @Value("richdd.dev.app@gmail.com")
     private String from;
 
-    @Value("${emailPassword}")
+    @Value("ktys svze snie kckc")
     private String password;
 
-    @Value("${emailTo}")
+    @Value("richdd.dev@gmail.com")
     private String to;
 
     public void MandarEmail(String texto, String nome, String usuarioEmail){
